@@ -1,0 +1,41 @@
+# word	ipa_v6_pinyin
+# Project-local Chinese frontend overrides for common X-Voice narration cases.
+# Values are pinyin tone3 syllables. Use "|" between syllables that belong to
+# one word; the frontend will insert spaces between segmented words.
+重庆	chong2|qing4
+重庆银行	chong2|qing4|yin2|hang2
+银行	yin2|hang2
+银行行长	yin2|hang2|hang2|zhang3
+行长	hang2|zhang3
+重新	chong2|xin1
+重复	chong2|fu4
+重阳	chong2|yang2
+重要	zhong4|yao4
+重量	zhong4|liang4
+音乐	yin1|yue4
+乐队	yue4|dui4
+乐曲	yue4|qu3
+快乐	kuai4|le4
+欢乐	huan1|le4
+为了	wei4|le
+作为	zuo4|wei2
+因为	yin1|wei4
+得了	de2|le
+说书人	shuo1|shu1|ren2
+旁白	pang2|bai2
+对白	dui4|bai2
+发帖人	fa1|tie1|ren2
+弟弟	di4|di
+五口之家	wu3|kou3|zhi1|jia1
+详细	xiang2|xi4
+描述	miao2|shu4
+现状	xian4|zhuang4
+寻求	xun2|qiu2
+处理	chu3|li3
+家庭	jia1|ting2
+问题	wen4|ti2
+建议	jian4|yi4
+提出	ti2|chu1
+初步	chu1|bu4
+计划	ji4|hua4
+人民币	ren2|min2|bi4

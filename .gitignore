@@ -1,0 +1,12 @@
+build/
+build-*/
+benchmarks/
+out/
+__pycache__/
+*.pyc
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe

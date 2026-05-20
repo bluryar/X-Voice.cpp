@@ -1,0 +1,22 @@
+{
+  "cpp_pinyin_support_dict": "/root/code/ggbond/projects/x-voice-ggml-cpp/vendor/cpp-pinyin/res/dict",
+  "generated": {
+    "phrase_entries": 47111,
+    "phrase_map_entries": 10461,
+    "word_entries": 26775
+  },
+  "output": "/root/code/ggbond/projects/x-voice-ggml-cpp/resources/zh_pinyin_dict",
+  "policy": "Runtime pinyin readings are generated from python-pinyin dictionaries; cpp-pinyin source files only provide trans_word.txt and License.txt.",
+  "python_pinyin": "/root/code/ggbond/projects/x-voice-ggml-cpp/vendor/python-pinyin",
+  "python_pinyin_phrases_json": "/root/code/ggbond/projects/x-voice-ggml-cpp/vendor/python-pinyin/pypinyin/phrases_dict.json",
+  "python_pinyin_words_json": "/root/code/ggbond/projects/x-voice-ggml-cpp/vendor/python-pinyin/pypinyin/pinyin_dict.json",
+  "schema_version": 2,
+  "stats": {
+    "phrase_slots_with_multiple_candidates": 2,
+    "python_phrase_entries": 47111,
+    "python_word_entries": 41923,
+    "skipped_phrase_entries": 0,
+    "skipped_word_entries": 15148,
+    "word_entries_with_multiple_candidates": 7326
+  }
+}

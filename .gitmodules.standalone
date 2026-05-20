@@ -1,0 +1,7 @@
+[submodule "vendor/ggml"]
+	path = vendor/ggml
+	url = https://github.com/ggml-org/ggml.git
+
+[submodule "vendor/python-pinyin"]
+	path = vendor/python-pinyin
+	url = https://github.com/mozillazg/python-pinyin.git

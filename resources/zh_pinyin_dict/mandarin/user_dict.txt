@@ -1,0 +1,2 @@
+# Runtime dictionary is generated from python-pinyin. Project-specific
+# narration overrides live in resources/zh_frontend_overrides.tsv.
