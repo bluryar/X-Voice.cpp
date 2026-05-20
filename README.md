@@ -354,6 +354,22 @@ weights are converted, while conv, norm, bias, embedding, positional, and small
 tensors remain in their original type. See `docs/quantization.md` for manual
 commands and validation notes.
 
+Local quantization benchmark, measured on an RTX 4060 Ti with
+`NVIDIA_TF32_OVERRIDE=0`, `--preset product`, `cfg_nonlayered`, `32` steps, the
+default zh sample text, and `/root/code/ggbond/models/test.wav`:
+
+| model | size | wall | sampler | load | mel max abs vs f32 | mel mean abs vs f32 | wav max abs vs f32 | wav mean abs vs f32 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| f32 | 1544.1 MiB | 10.74s | 9.222s | 0.515s | 0 | 0 | 0 | 0 |
+| f16 | 1060.5 MiB | 8.89s | 7.316s | 0.513s | 1.40578 | 0.01232 | 0.89212 | 0.01086 |
+| q8_0 | 847.4 MiB | 8.52s | 7.268s | 0.303s | 0.78026 | 0.02397 | 1.01920 | 0.01708 |
+| q6_k | 790.0 MiB | 8.66s | 7.407s | 0.301s | 0.89031 | 0.04256 | 0.68326 | 0.02387 |
+| q4_k | 728.8 MiB | 8.61s | 7.277s | 0.319s | 5.72519 | 0.28411 | 1.22644 | 0.07608 |
+
+Interpretation: f16/q8_0/q6_k are the preferred release candidates. q4_k is
+useful when size matters most, but its larger generated-mel drift should be
+auditioned carefully before treating it as a quality default.
+
 ## Submodule Packaging
 
 This directory is intended to become a standalone open-source repository and to
